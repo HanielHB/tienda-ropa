@@ -1055,7 +1055,7 @@
             productsCount.textContent = `${productos.length} producto${productos.length !== 1 ? 's' : ''}`;
 
             productos.forEach(producto => {
-                const mensaje = `Hola, me interesa: ${producto.nombre} - Precio: $${producto.precio}. ¿Está disponible?`;
+                const mensaje = `Hola, quiero comprar: ${producto.nombre} - Precio: Bs ${producto.precio}. me pasa el Qr`;
                 const linkWhatsapp = `https://wa.me/${TU_NUMERO_WHATSAPP}?text=${encodeURIComponent(mensaje)}`;
                 const imagenSrc = producto.imagen || 'https://via.placeholder.com/400x500/f5f5f5/999999?text=Sin+Imagen';
 
@@ -1120,4 +1120,5 @@
 
 
 </html>
+
 
